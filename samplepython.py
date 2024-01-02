@@ -1,9 +1,11 @@
 import math as m
 
-radius = float(input('Radius: '))
 
-area = m.pi * (m.pow(radius, 2))
+def circleArea() : 
+    radius = float(input('Radius: '))
+    radiusSqr = m.pow(radius, 2)
+    area = m.pi * (radiusSqr)
+    return area
 
+area = circleArea()
 print(area)
-
-#print('Hello World.')
